@@ -21,4 +21,8 @@ public slots:
 	void LanceDe();
 	void RemiseScoreZero();
 	void AfficheScore();
+	void AjoutScore(int dd);
+
+	void getN();
+	void getDD();
 };

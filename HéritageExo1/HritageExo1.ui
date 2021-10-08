@@ -121,11 +121,44 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>HritageExo1Class</receiver>
+   <slot>AjoutScore()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>HritageExo1Class</receiver>
+   <slot>RemiseScoreZero()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>LanceDe()</slot>
   <slot>RemiseScoreZero()</slot>
   <slot>AfficheDeValeur()</slot>
   <slot>AfficheScore()</slot>
+  <slot>AjoutScore()</slot>
  </slots>
 </ui>
