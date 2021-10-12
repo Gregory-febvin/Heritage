@@ -13,7 +13,6 @@ void HritageExo1::LanceDe()
 	n = rand() % 6 + 1;
 	this->dd += n;
 	ui.label_2->setText("Nombre : " + QLocale().toString(n));
-
 }
 
 void HritageExo1::AfficheScore()
@@ -24,5 +23,5 @@ void HritageExo1::AfficheScore()
 void HritageExo1::RemiseScoreZero()
 {
 	dd = NULL;
-	ui.label->setText(QLocale().toString(dd));
+	ui.label->setText("Total : " + QLocale().toString(dd));
 }
