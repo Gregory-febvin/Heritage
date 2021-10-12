@@ -70,7 +70,7 @@ public:
 
         retranslateUi(HritageExo1Class);
         QObject::connect(pushButton, SIGNAL(clicked(bool)), HritageExo1Class, SLOT(LanceDe()));
-        QObject::connect(pushButton_4, SIGNAL(clicked(bool)), HritageExo1Class, SLOT(AjoutScore()));
+        QObject::connect(pushButton_4, SIGNAL(clicked(bool)), HritageExo1Class, SLOT(AfficheScore()));
         QObject::connect(pushButton_2, SIGNAL(clicked(bool)), HritageExo1Class, SLOT(RemiseScoreZero()));
 
         QMetaObject::connectSlotsByName(HritageExo1Class);

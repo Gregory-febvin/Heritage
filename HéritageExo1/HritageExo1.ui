@@ -125,7 +125,7 @@
    <sender>pushButton_4</sender>
    <signal>clicked(bool)</signal>
    <receiver>HritageExo1Class</receiver>
-   <slot>AjoutScore()</slot>
+   <slot>AfficheScore()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>330</x>
@@ -157,8 +157,6 @@
  <slots>
   <slot>LanceDe()</slot>
   <slot>RemiseScoreZero()</slot>
-  <slot>AfficheDeValeur()</slot>
   <slot>AfficheScore()</slot>
-  <slot>AjoutScore()</slot>
  </slots>
 </ui>

@@ -10,19 +10,18 @@ class HritageExo1 : public QMainWindow
 public:
     HritageExo1(QWidget *parent = Q_NULLPTR);
 
-private:
 
+protected:
 	int n;
 	int dd;
 
+private:
     Ui::HritageExo1Class ui;
 
 public slots:
 	void LanceDe();
 	void RemiseScoreZero();
 	void AfficheScore();
-	void AjoutScore(int dd);
-
-	void getN();
-	void getDD();
 };
+
+
