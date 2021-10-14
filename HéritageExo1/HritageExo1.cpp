@@ -10,18 +10,18 @@ HritageExo1::HritageExo1(QWidget *parent)
 
 void HritageExo1::LanceDe()
 {
-	n = rand() % 6 + 1;
-	this->dd += n;
-	ui.label_2->setText("Nombre : " + QLocale().toString(n));
+	dd = rand() % 6 + 1;
+	this->n += dd;
+	ui.label_2->setText("Nombre : " + QLocale().toString(dd));
 }
 
 void HritageExo1::AfficheScore()
 {
-	ui.label->setText("Total : " + QLocale().toString(this->dd));
+	ui.label->setText("Total : " + QLocale().toString(this->n));
 }
 
 void HritageExo1::RemiseScoreZero()
 {
-	dd = NULL;
-	ui.label->setText("Total : " + QLocale().toString(dd));
+	n = 0;
+	ui.label->setText("Total : " + QLocale().toString(n));
 }
