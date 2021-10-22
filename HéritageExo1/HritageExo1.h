@@ -21,6 +21,8 @@ public slots:
 	void LanceDe();
 	void RemiseScoreZero();
 	void AfficheScore();
-	
 	void AfficheValeurDe();
+
+	void DeHisto();
+	void DeNormal();
 };

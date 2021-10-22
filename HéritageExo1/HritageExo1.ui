@@ -6,70 +6,18 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>455</width>
-    <height>400</height>
+    <width>669</width>
+    <height>492</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>HritageExo1</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>80</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Lancer un dé</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>250</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Remise a zéro</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>210</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Score Total</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>210</y>
-      <width>121</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>80</x>
       <y>60</y>
       <width>121</width>
       <height>61</height>
@@ -79,16 +27,117 @@
      <string/>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>455</width>
-     <height>21</height>
-    </rect>
-   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>150</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lancer un dé</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>150</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Score Total</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>190</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Remise a zéro</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>40</y>
+      <width>211</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Nombre Tir</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Résultat</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLineEdit" name="NbDe">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>240</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>210</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choisisez combien de dé lancez ( jusqu'a 7)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>270</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gambling Time</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -99,6 +148,34 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>669</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuListe_Type_D">
+    <property name="title">
+     <string>Liste Type Dé</string>
+    </property>
+    <addaction name="actionD_Normal"/>
+    <addaction name="actionD_Historique"/>
+   </widget>
+   <addaction name="menuListe_Type_D"/>
+  </widget>
+  <action name="actionD_Normal">
+   <property name="text">
+    <string>Dé Normal</string>
+   </property>
+  </action>
+  <action name="actionD_Historique">
+   <property name="text">
+    <string>Dé Historique</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
@@ -114,6 +191,22 @@
     <hint type="sourcelabel">
      <x>320</x>
      <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>HritageExo1Class</receiver>
+   <slot>RemiseScoreZero()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>298</y>
     </hint>
     <hint type="destinationlabel">
      <x>227</x>
@@ -138,18 +231,34 @@
    </hints>
   </connection>
   <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked(bool)</signal>
+   <sender>actionD_Normal</sender>
+   <signal>triggered()</signal>
    <receiver>HritageExo1Class</receiver>
-   <slot>RemiseScoreZero()</slot>
+   <slot>DeNormal()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>330</x>
-     <y>298</y>
+     <x>-1</x>
+     <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>227</x>
-     <y>199</y>
+     <x>334</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionD_Historique</sender>
+   <signal>triggered()</signal>
+   <receiver>HritageExo1Class</receiver>
+   <slot>DeHisto()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>334</x>
+     <y>245</y>
     </hint>
    </hints>
   </connection>
@@ -158,5 +267,7 @@
   <slot>LanceDe()</slot>
   <slot>RemiseScoreZero()</slot>
   <slot>AfficheScore()</slot>
+  <slot>DeHisto()</slot>
+  <slot>DeNormal()</slot>
  </slots>
 </ui>

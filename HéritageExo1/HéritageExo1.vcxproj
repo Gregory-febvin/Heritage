@@ -90,11 +90,13 @@
     <QtUic Include="HritageExo1.ui" />
     <QtMoc Include="HritageExo1.h" />
     <ClCompile Include="dd.cpp" />
+    <ClCompile Include="DeHisto.cpp" />
     <ClCompile Include="HritageExo1.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dd.h" />
+    <ClInclude Include="DeHisto.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
