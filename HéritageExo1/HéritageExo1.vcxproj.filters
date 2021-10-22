@@ -41,12 +41,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Fonction.cpp">
+    <ClCompile Include="dd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Fonction.h">
+    <ClInclude Include="dd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -89,12 +89,12 @@
     <QtRcc Include="HritageExo1.qrc" />
     <QtUic Include="HritageExo1.ui" />
     <QtMoc Include="HritageExo1.h" />
-    <ClCompile Include="Fonction.cpp" />
+    <ClCompile Include="dd.cpp" />
     <ClCompile Include="HritageExo1.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Fonction.h" />
+    <ClInclude Include="dd.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

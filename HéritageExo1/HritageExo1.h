@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_HritageExo1.h"
+#include "dd.h"
 
 class HritageExo1 : public QMainWindow
 {
@@ -9,19 +10,17 @@ class HritageExo1 : public QMainWindow
 
 public:
     HritageExo1(QWidget *parent = Q_NULLPTR);
-
-
-protected:
-	int n;
-	int dd;
-
+	
 private:
-    Ui::HritageExo1Class ui;
+	Ui::HritageExo1Class ui;
+	
+	dd *de;
+	int n;
 
 public slots:
 	void LanceDe();
 	void RemiseScoreZero();
 	void AfficheScore();
+	
+	void AfficheValeurDe();
 };
-
-
