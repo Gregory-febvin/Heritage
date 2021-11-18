@@ -8,7 +8,8 @@ private:
 
 public:
 	DeHisto();
-	void jet(); //simule le jet d’un dé
-	void jet(int n); //simule le jet de n dé
+	void jet(); 
+	void jet(int n); 
+	int getValeurTableau(int i);
 };
 

@@ -17,6 +17,7 @@ void HritageExo1::DeHisto()
 	ui.pushButton_3->setVisible(true);
 	ui.tableWidget->setVisible(true);
 	ui.NbDe->setVisible(true);
+	ui.label_3->setVisible(true);
 
 	ui.label->setVisible(false);
 	ui.label_2->setVisible(false);
@@ -36,6 +37,7 @@ void HritageExo1::DeNormal()
 	ui.pushButton_3->setVisible(false);
 	ui.tableWidget->setVisible(false);
 	ui.NbDe->setVisible(false);
+	ui.label_3->setVisible(false);
 }
 
 void HritageExo1::LanceDe()
@@ -75,4 +77,14 @@ void HritageExo1::AfficheScore()
 	QString ScoreTotal = QString::number(this->n);
 	ui.label->setText(ScoreTotal);
 	
+}
+
+void HritageExo1::DeMultiple()
+{
+	for (int i = 0; i < 7; i++)
+	{
+		//int tableau = DeHisto->getValeurTableau(i);
+
+
+	}
 }

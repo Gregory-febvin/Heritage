@@ -25,4 +25,6 @@ public slots:
 
 	void DeHisto();
 	void DeNormal();
+
+	void DeMultiple();
 };
