@@ -11,5 +11,6 @@ public:
 	void jet(); 
 	void jet(int n); 
 	int getValeurTableau(int i);
-};
+};
+
 

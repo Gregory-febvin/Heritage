@@ -6,6 +6,8 @@ private:
 
 	int ValeurDe;
 	int ScoreTotal;
+	
+	int NbLancer;
 
 public:
 

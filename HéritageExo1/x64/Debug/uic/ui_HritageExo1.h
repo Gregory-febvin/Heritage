@@ -73,14 +73,12 @@ public:
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setGeometry(QRect(260, 190, 101, 31));
         tableWidget = new QTableWidget(centralWidget);
-        if (tableWidget->columnCount() < 2)
-            tableWidget->setColumnCount(2);
+        if (tableWidget->columnCount() < 1)
+            tableWidget->setColumnCount(1);
         QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
-        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
         tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
-        tableWidget->setGeometry(QRect(430, 40, 211, 241));
+        tableWidget->setGeometry(QRect(470, 70, 101, 241));
         NbDe = new QLineEdit(centralWidget);
         NbDe->setObjectName(QString::fromUtf8("NbDe"));
         NbDe->setGeometry(QRect(230, 240, 171, 21));
@@ -114,6 +112,7 @@ public:
         QObject::connect(pushButton_4, SIGNAL(clicked(bool)), HritageExo1Class, SLOT(AfficheScore()));
         QObject::connect(actionD_Normal, SIGNAL(triggered()), HritageExo1Class, SLOT(DeNormal()));
         QObject::connect(actionD_Historique, SIGNAL(triggered()), HritageExo1Class, SLOT(DeHisto()));
+        QObject::connect(pushButton_3, SIGNAL(clicked(bool)), HritageExo1Class, SLOT(DeMultiple()));
 
         QMetaObject::connectSlotsByName(HritageExo1Class);
     } // setupUi
@@ -129,9 +128,7 @@ public:
         pushButton_4->setText(QCoreApplication::translate("HritageExo1Class", "Score Total", nullptr));
         pushButton_2->setText(QCoreApplication::translate("HritageExo1Class", "Remise a z\303\251ro", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QCoreApplication::translate("HritageExo1Class", "Nombre Tir", nullptr));
-        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QCoreApplication::translate("HritageExo1Class", "R\303\251sultat", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("HritageExo1Class", "R\303\251sultat", nullptr));
         NbDe->setText(QString());
         label_3->setText(QCoreApplication::translate("HritageExo1Class", "Choisisez combien de d\303\251 lancez ( jusqu'a 7)", nullptr));
         pushButton_3->setText(QCoreApplication::translate("HritageExo1Class", "Gambling Time", nullptr));

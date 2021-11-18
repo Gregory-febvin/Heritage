@@ -114,6 +114,7 @@ public:
         QObject::connect(pushButton_4, SIGNAL(clicked(bool)), HritageExo1Class, SLOT(AfficheScore()));
         QObject::connect(actionD_Normal, SIGNAL(triggered()), HritageExo1Class, SLOT(DeNormal()));
         QObject::connect(actionD_Historique, SIGNAL(triggered()), HritageExo1Class, SLOT(DeHisto()));
+        QObject::connect(pushButton_3, SIGNAL(clicked(bool)), HritageExo1Class, SLOT(DeMultiple()));
 
         QMetaObject::connectSlotsByName(HritageExo1Class);
     } // setupUi

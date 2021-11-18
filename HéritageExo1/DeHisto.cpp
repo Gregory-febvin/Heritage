@@ -1,4 +1,5 @@
 #include "DeHisto.h"
+#include <qDebug>
 
 DeHisto::DeHisto() 
 {
@@ -10,8 +11,8 @@ void DeHisto::jet()
 	int n;
 	dd::operator++(n);
 
-	n += (*this);
 	tab[0] = n;
+	qDebug() << tab[0];
 }
 
 void DeHisto::jet(int n)
@@ -19,10 +20,11 @@ void DeHisto::jet(int n)
 	for (int i = 0; i < n; i++)
 	{
 		dd::operator++(n);
-		int x;
+		int nombre;
 
-		x += (*this);
-		tab[i] = x ;
+		nombre += (*this);
+		tab[i] = nombre ;
+		qDebug() << tab[i];
 	}
 }
 

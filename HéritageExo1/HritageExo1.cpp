@@ -3,13 +3,15 @@
 #include "dd.h"
 #include "HritageExo1.h"
 #include <qDebug>
+#include "DeHisto.h"
 
 HritageExo1::HritageExo1(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
-	dd de;
+	de = new dd();
 
+	DeNormal();
 }
 
 void HritageExo1::DeHisto()
@@ -81,10 +83,29 @@ void HritageExo1::AfficheScore()
 
 void HritageExo1::DeMultiple()
 {
-	for (int i = 0; i < 7; i++)
+	QString NbDe = ui.NbDe->text();
+	int NbLancer = NbDe.toInt();
+
+	if( NbLancer < 8 )
 	{
-		//int tableau = DeHisto->getValeurTableau(i);
+		if (NbLancer == 1)
+		{
+			this->deMultiple->jet();
+		}
+		else {
+			this->deMultiple->jet(NbLancer);
+		}
+		
+	} else {
+		qDebug() << "Mon programme de mort ne peut lancer que 7 de a la fois";
+	}
+	
+	ui.tableWidget->setRowCount(7);
 
-
+	for (int i = 0; i < NbLancer; i++)
+	{
+		int tableau = deMultiple->getValeurTableau(i);
+			
+		ui.tableWidget->setItem(i, 0, new QTableWidgetItem(QString::number(tableau)));
 	}
 }

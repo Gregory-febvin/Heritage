@@ -3,6 +3,7 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_HritageExo1.h"
 #include "dd.h"
+#include "DeHisto.h"
 
 class HritageExo1 : public QMainWindow
 {
@@ -16,6 +17,7 @@ private:
 	
 	dd *de;
 	int n;
+	DeHisto *deMultiple;
 
 public slots:
 	void LanceDe();

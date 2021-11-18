@@ -3,6 +3,7 @@
 
 dd::dd() {
 	ScoreTotal = 0;
+	NbLancer = 0;
 	(*this)++;
 }
 
@@ -14,6 +15,8 @@ void dd::operator++(int)
 {
 	ValeurDe = rand() % 6 + 1;
 	ScoreTotal += ValeurDe;
+
+	NbLancer = NbLancer++;
 }
 
 void dd::operator=(int& value)
